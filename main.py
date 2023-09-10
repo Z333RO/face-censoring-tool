@@ -8,6 +8,7 @@ width = frame.shape[1]
 
 face_cascade = cv2.CascadeClassifier('faces.xml')
 
+# Read documentation to find out which codec to use based on the format output you want - by default outputs to .mp4
 output = cv2.VideoWriter('output_censored.mp4', cv2.VideoWriter_fourcc(*'mp4v'), 30, (width, height))
 # output = cv2.VideoWriter('output_censored.avi', cv2.VideoWriter_fourcc(*'DIVX'), 30, (width, height))
 
